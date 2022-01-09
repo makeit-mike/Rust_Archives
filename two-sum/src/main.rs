@@ -8,10 +8,10 @@ fn main() {
     let result = two_sum_bruteforce(vec![1,2,3,4],5);
     println!("{:?}", result);
 
-    let result = two_sum_hash(vec![1,2,3,4],5);
+    let result = two_sum_hashmap_twopass(vec![1,2,3,4],5);
     println!("{:?}", result);
 
-    let result = two_sum_hashmatch(vec![1,2,3,4],5);
+    let result = two_sum_hashmap_onepass(vec![1,2,3,4],5);
     println!("{:?}", result);
 }
 
@@ -37,7 +37,7 @@ for i = 0 to length of nums
     if map.contains(complement) and map[complement] != i 
         return [i, map[complement]]
 */
-fn two_sum_hash(nums: Vec<i32>, target: i32) -> Vec<i32> {
+fn two_sum_hashmap_twopass(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut hash_map: HashMap<i32, i32> = HashMap::new();
 
     for (i, item) in nums.iter().enumerate() {
@@ -55,7 +55,7 @@ fn two_sum_hash(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
-fn two_sum_hashmatch(nums: Vec<i32>, target: i32) -> Vec<i32> {
+fn two_sum_hashmap_onepass(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut hash_map: HashMap<i32, i32> = HashMap::new();
 
     for (i, item) in nums.iter().enumerate() {
