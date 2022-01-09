@@ -11,15 +11,15 @@ fn fizzbuzz_to(n: u32) {
 
 fn fizzbuzz(n: u32) -> () { // -> () is optional
     if is_div_by(n, 15) {
-        print!("fizzbuzz");
+        println!("fizzbuzz");
         return;
     }
     if is_div_by(n, 3) {
-        print!("fizz");
+        println!("fizz");
         return;
     }
     if is_div_by(n, 5) {
-        print!("buzz");
+        println!("buzz");
         return;
     } 
     println!("{}", n);
