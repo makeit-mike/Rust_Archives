@@ -1,0 +1,11 @@
+/Users/makeitekim/Development/rustArchives/hello-world/target/debug/deps/textwrap-e57efc94758963b1.rmeta: /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/makeitekim/Development/rustArchives/hello-world/target/debug/deps/libtextwrap-e57efc94758963b1.rlib: /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/makeitekim/Development/rustArchives/hello-world/target/debug/deps/textwrap-e57efc94758963b1.d: /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs:
+/Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs:
+/Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs:
+/Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs:
+/Users/makeitekim/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs:
