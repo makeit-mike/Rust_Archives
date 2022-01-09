@@ -29,6 +29,5 @@ fn is_div_by(lhs: u32, rhs: u32) -> bool {
     if rhs == 0 {
         return false;
     }
-
-    lhs % rhs == 0
+    lhs % rhs == 0 // last line of a method that returns some datatype does not need "return" or a semicolon... weird
 }
