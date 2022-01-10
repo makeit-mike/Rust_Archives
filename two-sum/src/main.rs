@@ -55,19 +55,22 @@ fn two_sum_hashmap_twopass(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
+
+/*
+map = new HashMap 
+for i in length of nums 
+    if map.contains(num) 
+        return [map[num], i] 
+    else 
+        map.insert(target - num, i)
+*/
 fn two_sum_hashmap_onepass(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    let mut hash_map: HashMap<i32, i32> = HashMap::new();
-
+    let mut complements: HashMap<i32, i32> = HashMap::new();
     for (i, item) in nums.iter().enumerate() {
-        match hash_map.get(&(target - item)) {
-            Some(value) => {
-                return vec![i.try_into().unwrap(), *value];
-            }
-            None => {
-                hash_map.insert(*item, i.try_into().unwrap());
-            }
-        }
+        match complements.get(item) {
+            Some(&index) => return vec![index, i as i32],
+            None => complements.insert(target - item, i as i32),
+        };
     }
-
     vec![]
 }
