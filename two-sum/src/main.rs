@@ -4,15 +4,21 @@
 use std::collections::HashMap;
 
 fn main() {
-    println!("Hello, world!");
     let result = two_sum_bruteforce(vec![1,2,3,4],5);
-    println!("{:?}", result);
-
+    println!("two_sum_bruteforce:");
+    print_list_ints(result);
+    
     let result = two_sum_hashmap_twopass(vec![1,2,3,4],5);
-    println!("{:?}", result);
+    println!("two_sum_hashmap_twopass:");
+    print_list_ints(result);
 
     let result = two_sum_hashmap_onepass(vec![1,2,3,4],5);
-    println!("{:?}", result);
+    println!("two_sum_hashmap_onepass:");
+    print_list_ints(result);
+}
+
+fn print_list_ints(items: Vec<i32>){
+    println!("{:?}", items);
 }
 
 fn two_sum_bruteforce(nums: Vec<i32>, target: i32) -> Vec<i32> {
