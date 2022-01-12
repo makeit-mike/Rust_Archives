@@ -88,6 +88,6 @@ pub fn use_flatmap_combinator() {
     let words_vec = lines_vec
                         .iter()
                         .flat_map(|&x| x.split(","))
-                        .collect::<Vec<&str>>();
+                        .collect::<Vec<&str>>();                      
     println!("All Gr than 0 {:?} -> {:?}", lines_vec, words_vec);
 }

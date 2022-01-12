@@ -9,7 +9,6 @@ Given a string s, find the length of the longest substring without repeating cha
     ex3
         "pwwkew" -> 3 (kew)
 */
-use std::collections::HashMap;
 
 fn main() {
     let l = length_of_longest_substring("abcabcbb".to_string());
@@ -23,45 +22,22 @@ fn main() {
 
     let l = length_of_longest_substring("dvdf".to_string());
     println!("dvdf - {}\r\n",l);
-}
 
-// works for most scenarios, but is very brute force.
-fn length_of_longest_substring_bruteforce(s: String) -> i32 {
-    if s.len() <= 1 {
-        return s.len() as i32;
-    }
-
-    let mut currMaxLen = 0;
-    let mut maxLen = 0;
-    let mut hash_map: HashMap<char, i32> = HashMap::new();
-
-    for (i, item) in s.chars().enumerate() {
-        if hash_map.contains_key(&item) {
-            hash_map = HashMap::new();
-            currMaxLen = 0;
-        }
-        currMaxLen = currMaxLen + 1;
-        if currMaxLen >= maxLen {
-            maxLen = currMaxLen;
-        }
-        hash_map.insert(item, i as i32);
-    } 
-    maxLen
+    let l = length_of_longest_substring("au".to_string());
+    println!("au - {}\r\n",l);
 }
 
 fn length_of_longest_substring(s: String) -> i32 {
-    let mut hash_map = HashMap::new();
-    let mut max_len = 0;
-    let mut before = 0;
-    let mut current = 0;
-    for c in s.chars() {
-        println!("current {}, before {}",current, before);
-        if let Some(last) = hash_map.insert(c, current) {
-            before = std::cmp::max(before, last);
+    let mut p1 = -1;
+    let mut max_length = 0;
+    let mut map: std::collections::HashMap<char, i32> = std::collections::HashMap::with_capacity(128);
+
+    for (p2, item) in s.chars().enumerate() {
+        println!("{}", item);
+        if let Some(p2) = map.insert(item, p2 as i32) {
+           p1 = std::cmp::max(p1, p2);
         }
-        max_len = std::cmp::max(max_len, current - before);
-        current += 1;
-    }
-    println!();
-    max_len
+        max_length = std::cmp::max(max_length, (p2 as i32) - p1);
+    } 
+    max_length
 }
