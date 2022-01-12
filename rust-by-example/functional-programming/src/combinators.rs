@@ -32,6 +32,8 @@ pub fn use_filter_combinator() {
 pub fn use_count_combinator() {
     let my_vector = vec!(1,2,3,4,5);
     let vec_count = my_vector.iter().count();
+
+    println!("Count of {:?} = {}", my_vector, vec_count);
 }
 
 pub fn use_zip_with_index() {
@@ -52,7 +54,6 @@ pub fn use_zip_with_index() {
         print!("({}, {}), ", i, j);
     }
     println!("\r\n");
-
 }
 
 pub fn use_max_combinator() {
