@@ -2,6 +2,6 @@ mod combinators;
 mod abstraction;
 
 fn main() {
-    combinators::hello_world();
-    abstraction::simple_function();
+    combinators::use_flatmap_combinator();
+    abstraction::return_function_from_function();
 }
