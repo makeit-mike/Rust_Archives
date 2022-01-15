@@ -91,5 +91,6 @@ pub fn string_to_int_edgecases(s: String) -> i32 {
     if is_negative { a = a * -1; }
     if a > i32::MAX as i64 { return std::i32::MAX; }
     if a < std::i32::MIN as i64 { return std::i32::MIN; }
+    
     a as i32
 }
