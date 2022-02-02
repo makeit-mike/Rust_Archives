@@ -33,10 +33,7 @@ fn main2() {
             "is_male": true
         }
     "#;
-    let json_from_url = "https://randomuser.me/api/";
-
     let result = serde_json::from_str(json_str);
-
     if result.is_ok() {
         let parsed: serde_json::Value = result.unwrap();
         println!("Name: {}", parsed["name"].as_str().unwrap());
